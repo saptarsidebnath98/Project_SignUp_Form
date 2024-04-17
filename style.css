@@ -19,6 +19,12 @@ body {
 
 }
 
+.whiteFont {
+    color: rgb(133, 131, 255);
+    font-weight: bold;
+    font-style: italic;
+}
+
 .left-side {
     width: 40%;
     height: 100%;
@@ -50,7 +56,7 @@ img {
 
 /* UPPER PART */ 
 .upper{
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(233, 239, 255);
     height: 35vh;
 
     display: flex;
@@ -118,18 +124,22 @@ input {
     height: 20px;
 
     border-radius: 0.3rem;
-    border: 2px solid #c1c2c4;
+    border: 2px solid #dee9ff;
+
+    font-size: 0.7rem;
+    padding-left: 5px;
 }
-input:active{
+input:focus{
     border-color: blue;
 }
+
 input[type="password"]:invalid{
     border-color: red;
 }
 
 /* LOWER PART */
 .lower{
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(233, 239, 255);
     height: 225px;
 
 }
@@ -151,7 +161,7 @@ button {
     top: 20px;
 }
 
-#logIn {
+.blueFont {
     color: rgb(22, 29, 71);
     font-weight: bold;
 }
