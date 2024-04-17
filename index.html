@@ -10,13 +10,68 @@
   <body>
     <div class="container">
       <div class="left-side">
-                <div id="transparent">
-                    <img src="/logoForSignUpProject.png" alt="Page Logo">
-                </div>
-            </div>
+        <div id="transparent">
+          <img src="/logoForSignUpProject.png" alt="Page Logo" />
+        </div>
       </div>
       <div class="right-side">
-        
+        <div class="upper">
+          <p>Explore the world from the eyes of NASA in collaboration with PK98. A three dimention look of the world from space. Feel like an astronaut in a virtual world? Sign Up now.</p>
+          <p>You know you want to.</p>
+        </div>
+        <div class="middle">
+          <h3 id="middle-heading">Let's do this!</h3>
+          <form action="#" method="post">
+          <div class="form-div">
+
+            <div class="form-left">
+              <div class="form-item-div">
+
+                <label for="fname">FIRST NAME</label>
+                <input type="text" id="fname" name="user_first_name" required>
+              </div>
+
+              <div class="form-item-div">
+
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="user_email" placeholder="you@gmail.com" required>
+              </div>
+
+              <div class="form-item-div">
+
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="user_password" required>
+              </div>
+            </div>
+            <div class="form-right">
+
+              <div class="form-item-div">
+
+                <label for="lname">LAST NAME</label>
+                <input type="text" id="lname" name="user_last_name" required>
+              </div>
+  
+              <div class="form-item-div">
+
+                <label for="phNumber">PHONE NUMBER</label>
+                <input type="number" id="phNumber" name="user_phone_number" required>
+              </div>
+  
+              <div class="form-item-div">
+
+                <label for="confirm_password">CONFIRM PASSWORD</label>
+                <input type="password" id="confirm_password" name="user_confirm_password" required>
+              </div>
+            </div>
+          </div>
+          </form>
+        </div>
+        <div class="lower">
+          <div class="lower-div">
+            <button type="submit">Create Account</button>
+            <p>Already have an account?<span id="logIn">Log in</span></p>
+          </div>
+        </div>
       </div>
     </div>
   </body>

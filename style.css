@@ -6,12 +6,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .container {
     background-color: white;
     width: 70%;
     height: 100vh;
+
+    display: flex; 
 
 }
 
@@ -27,7 +31,7 @@ body {
     height: 150px;
 
     position: relative;
-    top: 150px;
+    top: 100px;
 }
 img {
     position: relative;
@@ -38,7 +42,116 @@ img {
 
 }
 
-/* .right-side {
-    background-color: aqua;
+.right-side {
+    background-color: rgb(221, 221, 221);
     width: 70%;
-} */
+
+}
+
+/* UPPER PART */ 
+.upper{
+    background-color: rgb(189, 189, 189);
+    height: 35vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+ .upper p{
+     font-weight: bold;
+ }
+
+/* MIDDLE PART  */
+.middle{
+    background-color: white;
+    height: 30vh;
+
+    padding-left: 10px;
+    font-size: 0.7rem;
+
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding-top: 20px;
+    gap: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.middle #middle-heading{
+    margin: 0px;
+    font-size: 1rem;
+}
+.form-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    gap: 15px;
+}
+.form-left{
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-item-div{
+    display: flex;
+    flex-direction: column;
+}
+.form-right{
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input {
+    width: 180px;
+    height: 20px;
+
+    border-radius: 0.3rem;
+    border: 2px solid #c1c2c4;
+}
+input:active{
+    border-color: blue;
+}
+input[type="password"]:invalid{
+    border-color: red;
+}
+
+/* LOWER PART */
+.lower{
+    background-color: rgb(189, 189, 189);
+    height: 225px;
+
+}
+
+button {
+    height: 50px;
+    width: 200px;
+
+    border-radius: 10px;
+    border: 0px;
+
+    background-color: rgb(22, 29, 71);
+    color: white;
+}
+
+.lower-div {
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+
+#logIn {
+    color: rgb(22, 29, 71);
+    font-weight: bold;
+}
