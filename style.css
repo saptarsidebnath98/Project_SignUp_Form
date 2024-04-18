@@ -1,167 +1,226 @@
-body {
-    background-color: black;
-    margin: 0%;
-    padding: 0%;
+  html{
+        font-size: 1em;
+    }
+    body {
+        background-color: black;
+        margin: 0%;
+        padding: 0%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .container {
+        background-color: white;
+        width: 70vw;
+        height: 100vh;
+    
+        display: flex; 
+    
+    }
+    
+    .whiteFont {
+        color: rgb(133, 131, 255);
+        font-weight: bold;
+        font-style: italic;
+    }
+    
+    .left-side {
+        width: 30vw;
+        height: 100vh;
+       background-image: url('/space.jpg');
+       background-position: center;
+       background-size: cover;
+       
+    }
+    #transparent {
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 20vh;
+    
+        position: relative;
+        top: 20vh;
+    }
+    img {
+        position: relative;
+        left: 4vw;
+        max-width: 100%;
+        height: auto;
+        
+        width: 70%;
+    
+    }
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    #copyright {
+        color: white;
+        position: relative;
+        left: 5%;
+        top: 75%;
+        font-size: 0.6rem;
+        font-weight: normal;
+        height: 5vh;
+        width: 10vw;
+        
+    }
+    
+    .right-side {
+        background-color: rgb(221, 221, 221);
+        width: 60vw;
+    
+    }
+    
+    /* UPPER PART */ 
+    .upper{
+        background-color: rgb(233, 239, 255);
+        height: 35vh;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    
+        padding-left: 5%;
+        padding-right: 5%;
 
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+        overflow:hidden;
+    }
+     .upper p{
+         font-weight: bold;
+         font-size: 0.9em;
+     }
+    
+    /* MIDDLE PART  */
+    .middle{
+        background-color: white;
+        height: 35vh;
+    
+        padding-left: 10%;
+        font-size: 0.7rem;
+    
+        font-weight: bold;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    
+        padding-top: 5vh;
+        gap: 1vw;
+    
+        box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    }
+    .middle #middle-heading{
+        margin: 0%;
+        font-size: 0.9rem;
+    }
+    .form-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    
+        gap: 2vw;
+    }
+    .form-left{
+        width: 40%;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vh;
+    }
+    
+    .form-item-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .form-right{
+        width: 40%;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vh;
+    }
+    .form-labels{
+        letter-spacing: 2px;
+    }
+    input {
+        width: 15vw;
+        height: 3vh;
+    
+        border-radius: 0.3rem;
+        border: 2px solid #dee9ff;
+    
+        font-size: 0.7rem;
+        padding-left: 0.5vw;
+    
+    }
+    input:focus{
+        border-color: blue;
+        background-color: rgb(133, 131, 255);
+        box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Blue box-shadow with some transparency */
+        outline: none; 
+    }
+    input[type="password"].interacted:invalid {
+        border: 2px solid red;
+    }
+    
+    /* input[type="password"]:invalid{
+        border-color: red;
+    } */
+    
+    input[type="password"]:valid{
+        border-color: green;
+    }
+    
+    
+    /* LOWER PART */
+    .lower{
+        background-color: rgb(233, 239, 255);
+        height: calc(100vh - (40vh + 35vh));
+    
+    }
+    
+    button {
+        height: 7vh;
+        width: 10rem;
+    
+        border-radius: 0.5em;
+        border: 0px;
+    
+        background-color: rgb(22, 29, 71);
+        color: white;
+    }
+    
+    button:hover{
+        background-color: rgb(133, 131, 255);
+        color: black;
+        font-weight: bold;
+    }
+    
+    .lower-div {
+        position: relative;
+        left: 5vw;
+        top: 5vh;
+    }
+    
+    .blueFont {
+        color: rgb(22, 29, 71);
+        font-weight: bold;
+    }
+    .blueFont:hover{
+        color: rgb(133, 131, 255);
+    }
 
-.container {
-    background-color: white;
-    width: 70%;
-    height: 100vh;
-
-    display: flex; 
-
-}
-
-.whiteFont {
-    color: rgb(133, 131, 255);
-    font-weight: bold;
-    font-style: italic;
-}
-
-.left-side {
-    width: 40%;
-    height: 100%;
-   background-image: url('/space.jpg');
-   background-position: center;
-   background-size: cover;
-}
-#transparent {
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 150px;
-
-    position: relative;
-    top: 100px;
-}
-img {
-    position: relative;
-    left: 70px;
-
-    height: 150px;
-    width: 70%;
-
-}
-
-.right-side {
-    background-color: rgb(221, 221, 221);
-    width: 70%;
-
-}
-
-/* UPPER PART */ 
-.upper{
-    background-color: rgb(233, 239, 255);
-    height: 35vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-
-    padding-left: 20px;
-    padding-right: 20px;
-}
- .upper p{
-     font-weight: bold;
- }
-
-/* MIDDLE PART  */
-.middle{
-    background-color: white;
-    height: 30vh;
-
-    padding-left: 10px;
-    font-size: 0.7rem;
-
-    font-weight: bold;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    padding-top: 20px;
-    gap: 10px;
-
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.middle #middle-heading{
-    margin: 0px;
-    font-size: 1rem;
-}
-.form-div{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-
-    gap: 15px;
-}
-.form-left{
-    width: 40%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.form-item-div{
-    display: flex;
-    flex-direction: column;
-}
-.form-right{
-    width: 40%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-input {
-    width: 180px;
-    height: 20px;
-
-    border-radius: 0.3rem;
-    border: 2px solid #dee9ff;
-
-    font-size: 0.7rem;
-    padding-left: 5px;
-}
-input:focus{
-    border-color: blue;
-}
-
-input[type="password"]:invalid{
-    border-color: red;
-}
-
-/* LOWER PART */
-.lower{
-    background-color: rgb(233, 239, 255);
-    height: 225px;
-
-}
-
-button {
-    height: 50px;
-    width: 200px;
-
-    border-radius: 10px;
-    border: 0px;
-
-    background-color: rgb(22, 29, 71);
-    color: white;
-}
-
-.lower-div {
-    position: relative;
-    left: 30px;
-    top: 20px;
-}
-
-.blueFont {
-    color: rgb(22, 29, 71);
-    font-weight: bold;
-}
+    /* Media query for smaller desktop screens */
+@media screen and (max-width: 1200px) {
+    /* Adjust styles for smaller desktop screens */
+  }
+  
+  /* Media query for tablets and larger smartphones */
+  @media screen and (max-width: 992px) {
+    /* Adjust styles for tablets and larger smartphones */
+  }
+  
+  /* Media query for smaller smartphones */
+  @media screen and (max-width: 768px) {
+    /* Adjust styles for smaller smartphones */
+  }
