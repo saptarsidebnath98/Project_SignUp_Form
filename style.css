@@ -31,7 +31,7 @@
     .left-side {
         width: 30vw;
         height: 100vh;
-       background-image: url('/space.jpg');
+       background-image: url('space.jpg');
        background-position: center;
        background-size: cover;
        
